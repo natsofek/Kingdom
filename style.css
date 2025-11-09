@@ -317,3 +317,34 @@ footer h2 {
 }
 
 
+/* New rule to ensure the image takes up 100% of the link container */
+.document-link.full-cell-img {
+    /* Remove padding so the image goes edge-to-edge */
+    padding: 0; 
+}
+
+.document-link.full-cell-img img {
+    /* CRITICAL: Overrides the 50x50 rule */
+    width: 100%;
+    height: 100%;
+    
+    /* Ensure the image fills the area without distortion */
+    object-fit: cover; 
+    
+    /* Remove margin if it was previously set */
+    margin: 0;
+}
+
+/* You also need to adjust the parent .document-link to accommodate */
+.document-link {
+    /* Change the way items are centered so the image is the main feature */
+    justify-content: flex-start; 
+    /* NEW: Ensure the container itself has a defined size */
+    height: 250px; /* Example height for a full card look. Adjust as needed. */
+    
+    /* Remove the default background color since the image will cover it */
+    background-color: transparent; 
+}
+
+
+
