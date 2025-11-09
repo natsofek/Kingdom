@@ -253,10 +253,10 @@ h3 { font-size: 1.8em; }
     align-items: center;
     justify-content: center;
     background-color: #252a33;
-    padding: 20px;
+    padding: 5px;
     text-decoration: none;
     color: var(--color-light);
-    border: 1px solid var(--color-secondary);
+    border: 5px solid var(--color-secondary);
     border-radius: 5px;
     transition: background-color 0.3s, border-color 0.3s;
 }
@@ -268,8 +268,8 @@ h3 { font-size: 1.8em; }
 
 .document-link img {
     width: 450px;
-    height: 250px;
-    margin-bottom: 10px;
+    height: 150px;
+    margin-bottom: 0px;
     /* Placeholder for icons */
     content: url('[PLACEHOLDER_ICON_PDF]'); 
 }
@@ -345,6 +345,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
