@@ -163,7 +163,7 @@ h3 { font-size: 1.8em; }
     height: 50vw; /* Responsive height */
     min-height: 250px;
     margin: 20px 0;
-    height: 400px;
+    height: 600px;
 }
 
 .video-note {
@@ -345,6 +345,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
