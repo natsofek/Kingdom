@@ -163,6 +163,7 @@ h3 { font-size: 1.8em; }
     height: 50vw; /* Responsive height */
     min-height: 250px;
     margin: 20px 0;
+    height: 400px;
 }
 
 .video-note {
@@ -314,4 +315,5 @@ footer h2 {
     }
 
 }
+
 
