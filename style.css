@@ -267,8 +267,8 @@ h3 { font-size: 1.8em; }
 }
 
 .document-link img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px;
     /* Placeholder for icons */
     content: url('[PLACEHOLDER_ICON_PDF]'); 
@@ -345,6 +345,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
