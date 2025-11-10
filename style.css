@@ -251,6 +251,9 @@ h3 { font-size: 1.8em; }
     color: var(--color-accent);
 }
 
+
+
+
 /* --- COMPONENTS SECTION (Gallery) --- */
 .component-gallery {
     display: flex;
@@ -303,6 +306,9 @@ h3 { font-size: 1.8em; }
     border-top: 1px solid #333;
 }
 
+
+
+
 /* --- RESOURCES SECTION (PDF Links) --- */
 .document-grid {
     display: grid;
@@ -311,32 +317,45 @@ h3 { font-size: 1.8em; }
     text-align: center;
 }
 
+
 .document-link {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    /* CRITICAL: Set background to transparent in the default state */
+    background-color: transparent; 
+    
+    /* CRITICAL: Set text color to transparent or a very subtle color */
+    color: transparent; /* Makes the text invisible */
+    
+    /* ADD: A subtle border so the cell outline is visible */
+    border: 2px solid rgba(244, 244, 249, 0.2); /* Very faint off-white border */
 
-    height: 120px; /* Set a fixed height for a consistent cell size */
+    height: 120px; 
     padding: 15px; 
-    text-decoration: none;
+    text-decoration: none; 
     border-radius: 5px;
-    font-weight: bold; 
     text-transform: uppercase;
-    transition: background-color 0.3s;
+    
+    /* Add transition for a smooth fade-in effect */
+    transition: all 0.4s ease-in-out; 
 }
 
+/* Update the existing .document-link:hover rule */
 .document-link:hover {
-    background-color: #8c774f;
+    /* BRING BACK THE COLORS ON HOVER */
+    background-color: var(--color-primary); /* Gold/Bronze */
+    color: var(--color-light); /* White/Off-White Text */
+    
+    /* Make the border solid/gold on hover */
+    border: 2px solid var(--color-primary); 
 }
 
-.document-link span {
-    font-weight: bold;
-    font-size: 1.1em; /* Makes the text stand out more */
+/* Ensure the text inside the span also changes color (if needed) */
+.document-link:hover span {
+    color: var(--color-light);
 }
 
 
@@ -419,6 +438,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
