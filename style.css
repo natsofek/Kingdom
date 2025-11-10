@@ -25,7 +25,9 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: 0 auto;*/
     padding: 20px 0;
 }
 
@@ -345,6 +347,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
