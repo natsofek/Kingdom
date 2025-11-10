@@ -318,33 +318,48 @@ h3 { font-size: 1.8em; }
 }
 
 
-/* In style.css, find this rule: */
+/* Update the existing .document-link rule (make sure this is correct first) */
 .document-link {
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
     
-    /* CHANGE 1: Set background color to the thematic GOLD */
-    background-color: var(--color-primary); /* Gold/Bronze */
-    
-    /* CHANGE 2: Set text color to WHITE/LIGHT */
-    color: var(--color-light); /* White/Off-White Text */
-    
-    /* CHANGE 3: Set border to the Gold color (not transparent) */
-    border: 2px solid var(--color-primary); 
-
     height: 120px; 
     padding: 15px; 
     text-decoration: none; 
     border-radius: 5px;
     text-transform: uppercase;
-    
     transition: all 0.4s ease-in-out; 
+    
+    /* Ensure default is TRANSPARENT (if old rules are still conflicting) */
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid rgba(244, 244, 249, 0.2); 
+}
+
+/* NEW: This rule ensures visibility by overriding any transparent defaults */
+.document-link.is-visible {
+    background-color: var(--color-primary); /* Gold/Bronze */
+    color: var(--color-light); /* White/Off-White Text */
+    border: 2px solid var(--color-primary);
+}
+
+/* Ensure text inside the visible link is also colored */
+.document-link.is-visible span {
+    color: var(--color-light);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Modify the hover state to ONLY change the shade/border color */
+.document-link.is-visible:hover {
+    background-color: #8c774f; /* Darker Gold on hover */
+    border: 2px solid var(--color-accent); /* Use a bright accent color */
+    color: var(--color-light); /* Maintain text color */
 }
 
 
-/* Update the existing .document-link:hover rule */
 .document-link:hover {
     /* Slightly darken the background on hover for visual feedback */
     background-color: #8c774f; /* A darker shade of the primary gold */
@@ -438,6 +453,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
