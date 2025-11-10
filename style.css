@@ -320,12 +320,12 @@ h3 { font-size: 1.8em; }
     
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    
+
     height: 120px; /* Set a fixed height for a consistent cell size */
     padding: 15px; 
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold; /* Ensures all text is bold by default */
+    font-weight: bold; 
     text-transform: uppercase;
     transition: background-color 0.3s;
 }
@@ -333,6 +333,12 @@ h3 { font-size: 1.8em; }
 .document-link:hover {
     background-color: #8c774f;
 }
+
+.document-link span {
+    font-weight: bold;
+    font-size: 1.1em; /* Makes the text stand out more */
+}
+
 
 .document-link img {
     width: 250px;
@@ -413,6 +419,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
