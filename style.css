@@ -326,7 +326,7 @@ h3 { font-size: 1.8em; }
     align-items: center; 
     justify-content: center; 
     
-    background-color: var(--color-primary); /* Gold/Bronze */
+
     color: var(--color-light); /* White/Off-White Text */
     border: 2px solid var(--color-primary); 
 
@@ -335,9 +335,6 @@ h3 { font-size: 1.8em; }
     text-decoration: none; 
     border-radius: 5px;
     text-transform: uppercase;
-    
-    /* REMOVE THIS LINE TO STOP THE FADE-IN EFFECT */
-    /* transition: all 0.4s ease-in-out; */ 
 }
 
 /* NEW: This rule ensures visibility by overriding any transparent defaults */
@@ -458,6 +455,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
