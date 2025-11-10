@@ -27,7 +27,6 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /*margin: 0 auto;*/
     padding: 20px 0;
 }
 
@@ -42,10 +41,19 @@ body {
 }
 .gallery-item {
     max-width: 800px; 
-    
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
 
+/* Targets all H2 elements inside the main content container */
+.container h2 {
+    text-align: center;
+}
+
+/* Optional: If you also want to center the smaller headings and paragraph text */
+.container h3, 
+.container p {
     text-align: center;
 }
 
@@ -374,6 +382,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
