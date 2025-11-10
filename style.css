@@ -40,7 +40,14 @@ body {
     max-width: 800px;
     height: auto;
 }
+.gallery-item {
+    max-width: 800px; 
+    
+    margin-left: auto;
+    margin-right: auto;
 
+    text-align: center;
+}
 
 
 
@@ -367,6 +374,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
