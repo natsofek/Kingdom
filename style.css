@@ -31,6 +31,21 @@ body {
     padding: 20px 0;
 }
 
+.container img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
 h2, h3 {
     font-family: var(--font-heading);
     color: var(--color-primary);
@@ -347,6 +362,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
