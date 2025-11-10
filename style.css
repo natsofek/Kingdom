@@ -58,21 +58,33 @@ body {
 }
 
 .card-gallery-grid {
-    /* Centers all text and inline elements inside the div */
+    /* 1. Turn this into a Flexible Container */
+    display: flex; 
+    
+    /* 2. Wrap items to the next line on small screens */
+    flex-wrap: wrap; 
+    
+    /* 3. CRITICAL: Center the group of items horizontally */
+    justify-content: center; 
+    
+    /* 4. Center text inside the figures */
     text-align: center; 
+    
+    /* Optional: Add some space between the rows and columns */
+    gap: 20px; 
 }
 .card-gallery-grid .card-page {
-    max-width: 300px; 
+    /* Set the specific size for each card */
+    width: 250px; /* Use width instead of max-width to help with wrapping */
     
-    margin-left: auto;
-    margin-right: auto;
+    /* Remove the problematic auto margins */
+    margin-left: 0;
+    margin-right: 0;
     
-  
+    /* Ensure the vertical space remains */
     margin-bottom: 20px; 
+    
 }
-
-
-
 
 
 
@@ -397,6 +409,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
