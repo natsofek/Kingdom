@@ -37,7 +37,7 @@ body {
 }
 
 .gallery-item img {
-    max-width: 100%;
+    max-width: 800px;
     height: auto;
 }
 
@@ -362,6 +362,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
