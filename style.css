@@ -319,24 +319,25 @@ h3 { font-size: 1.8em; }
 
 
 /* Update the existing .document-link rule (make sure this is correct first) */
+/* In style.css, find this rule: */
 .document-link {
-    color: var(--color-light);
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
     
+    background-color: var(--color-primary); /* Gold/Bronze */
+    color: var(--color-light); /* White/Off-White Text */
+    border: 2px solid var(--color-primary); 
+
     height: 120px; 
     padding: 15px; 
     text-decoration: none; 
     border-radius: 5px;
     text-transform: uppercase;
-    transition: all 0.4s ease-in-out; 
     
-    /* Ensure default is TRANSPARENT (if old rules are still conflicting) */
-    background-color: transparent;
-    color: transparent;
-    border: 2px solid rgba(244, 244, 249, 0.2); 
+    /* REMOVE THIS LINE TO STOP THE FADE-IN EFFECT */
+    /* transition: all 0.4s ease-in-out; */ 
 }
 
 /* NEW: This rule ensures visibility by overriding any transparent defaults */
@@ -366,13 +367,11 @@ h3 { font-size: 1.8em; }
     font-size: 1.1em; 
 }
 
+/* Update the existing .document-link:hover rule */
 .document-link:hover {
-    /* Slightly darken the background on hover for visual feedback */
-    background-color: #8c774f; /* A darker shade of the primary gold */
-    
-    /* Ensure colors remain stable */
+    background-color: #8c774f; /* Darker Gold on hover */
+    border: 2px solid var(--color-accent); /* Use a bright accent color */
     color: var(--color-light); 
-    border: 2px solid var(--color-accent); /* Use a bright accent color for the border */
 }
 
 .document-link:hover span {
@@ -459,6 +458,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
