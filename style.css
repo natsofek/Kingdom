@@ -3,7 +3,7 @@
     --color-primary: #a08c5c; /* Gold/Bronze */
     --color-secondary: #0a0e14; /* Dark Background */
     --color-light: #f4f4f9; /* Off-White Text */
-    --color-accent: #b80f0a; /* Red/Maroon Accent */
+    --color-accent: #ff4500; /* Red/Maroon Accent */
     --font-heading: 'Cinzel', serif;
     --font-body: 'Roboto', sans-serif;
 }
@@ -118,7 +118,7 @@ h3 { font-size: 1.8em; }
 }
 
 .nav-links a {
-    color: var(--color-light);
+    color: #ffffff; 
     text-decoration: none;
     padding: 10px 15px;
     transition: color 0.3s;
@@ -220,11 +220,16 @@ h3 { font-size: 1.8em; }
 .component-gallery figure {
     flex: 1 1 200px; /* Allows up to 5 items on one large row */
     text-align: center;
+    background-position: center center;
     background-color: #252a33;
     padding: 10px;
     border-radius: 5px;
 }
-
+.component-gallery figure img {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; /
+}
 .component-gallery img {
     width: 100%;
     height: auto;
@@ -362,6 +367,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
