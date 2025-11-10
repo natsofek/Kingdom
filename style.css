@@ -320,6 +320,7 @@ h3 { font-size: 1.8em; }
 
 /* Update the existing .document-link rule (make sure this is correct first) */
 .document-link {
+    color: var(--color-light);
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -358,7 +359,12 @@ h3 { font-size: 1.8em; }
     border: 2px solid var(--color-accent); /* Use a bright accent color */
     color: var(--color-light); /* Maintain text color */
 }
-
+.document-link span {
+    /* Ensure the text is visible */
+    color: var(--color-light); 
+    font-weight: bold;
+    font-size: 1.1em; 
+}
 
 .document-link:hover {
     /* Slightly darken the background on hover for visual feedback */
@@ -453,6 +459,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
