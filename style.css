@@ -316,18 +316,22 @@ h3 { font-size: 1.8em; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #252a33;
-    padding: 5px;
+
+    
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    
+    height: 120px; /* Set a fixed height for a consistent cell size */
+    padding: 15px; 
     text-decoration: none;
-    color: var(--color-light);
-    border: 5px solid var(--color-secondary);
     border-radius: 5px;
-    transition: background-color 0.3s, border-color 0.3s;
+    font-weight: bold; /* Ensures all text is bold by default */
+    text-transform: uppercase;
+    transition: background-color 0.3s;
 }
 
 .document-link:hover {
-    background-color: var(--color-secondary);
-    border-color: var(--color-primary);
+    background-color: #8c774f;
 }
 
 .document-link img {
@@ -409,6 +413,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
