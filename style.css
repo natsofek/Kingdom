@@ -60,9 +60,17 @@ body {
 .card-gallery-grid {
     /* Centers all text and inline elements inside the div */
     text-align: center; 
-    
-    /* [You may have other grid properties here like display: grid or display: flex] */
 }
+.card-gallery-grid .card-page {
+    max-width: 300px; 
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+    margin-bottom: 20px; 
+}
+
 
 
 
@@ -389,6 +397,7 @@ footer h2 {
     /* Remove the default background color since the image will cover it */
     background-color: transparent; 
 }
+
 
 
 
